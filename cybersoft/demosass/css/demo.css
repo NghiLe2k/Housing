@@ -1,0 +1,48 @@
+h1 {
+  background-color: red;
+}
+
+.section1 p, .section2 p {
+  background-color: red;
+}
+
+.section1 button, .section2 button {
+  background-color: red;
+}
+
+.section1 button:hover, .section2 button:hover {
+  background-color: yellow;
+}
+
+.section2 p {
+  background-color: purple;
+}
+
+.section2 button {
+  background-color: pink;
+}
+
+.section3 p {
+  background-color: #005180;
+}
+
+.section3 button {
+  background-color: #cbffc0;
+}
+
+.section2 p {
+  background-color: blue;
+}
+
+.section2 button {
+  background-color: brown;
+}
+
+.section3 p {
+  background-color: violet;
+}
+
+.section3 button {
+  background-color: gold;
+}
+/*# sourceMappingURL=demo.css.map */

@@ -1,0 +1,31 @@
+h2{
+    background-color: aqua;
+}
+/* tagname  */
+p{
+    background-color: red;
+}
+/* id  */
+#content1{
+    background-color: green;
+}
+/* class  */
+.p1{
+    background-color: yellow;
+}
+/* cách 1 code bên dưới và cùng điểm ưu tiên  */
+/* bộ selector  */
+#content1{
+    background-color:pink;
+}
+/* cách 2 : bộ selector có điểm ưu tiên cao hơn  */
+/* định nghĩa chong cùng 1 thẻ  */
+/* 100+10 = 110  */
+.p1#content1{
+    background-color: gold;
+}
+/* quan hệ cha con phải cách ra  */
+/* 1+100+10=111  */
+div .p1#content1{
+    background-color: grey;
+}

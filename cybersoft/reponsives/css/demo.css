@@ -1,0 +1,40 @@
+/* deskfirst */
+/* xây dựng ở màng hình lớn sau đó chỉnh sữa cho hiển thị ở màng hình nhỏ  */
+/* type: screen,print,speech  */
+h1{
+    background-color: red;
+}
+@media screen and (max-width:1200px){
+    /* code css hiển thị theo màn hình  */
+    h1{
+        background-color: yellow;
+    }
+}
+@media screen and (max-width:768px){
+    /* code css hiển thị theo màn hình  */
+    h1{
+        background-color: green;
+    }
+}
+/* được khuyến cáo nên dùng  */
+/* mobilefirst */
+/* xây dựng ở màng hình nhỏ sau đó chỉnh sữa cho hiển thị ở màng hình lớn  */
+h2{
+    background-color: pink;
+}
+@media screen and (min-width:678px){
+    h2{
+        background-color: purple;
+    }
+}
+@media screen and (min-width:1200px){
+    h2{
+        background-color: gold;
+    }
+}
+/* ở giửa  */
+@media screen and (min-width:900px) and (max-width:1000px){
+    h2{
+        background-color: brown;
+    }
+}

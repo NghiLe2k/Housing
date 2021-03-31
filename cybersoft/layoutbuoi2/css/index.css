@@ -1,0 +1,108 @@
+/* GLOBAL(xóa toàn bộ các khoảng cách mặc định) */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* chỉ có tác dụng với padding  */
+}
+.clear{
+    clear: both;
+}
+
+/* HEADER  */
+.header img{
+    width: 200px;
+    /* display: block; */
+}
+/* nav 3 */
+/* bước 1 xóa chấm đen danh sách  */
+/* bước 3 thêm màu nền cho ul  */
+.header ul{
+    list-style: none;
+    background-color: black;
+/* thêm chiều cao tư nhiên cho ul  */
+    padding: 15px 0;
+}
+/* bước 2 xóa underline và đổi màu thẻ a  */
+.header ul a{
+    text-decoration: none;
+    color: white;
+ 
+}
+/* bước 4 chuyển tính chất thẻ li  */
+.header ul li{
+    display: inline;
+    margin: 0 10px;
+    /* padding: 15px;
+    border: 3px solid red; */
+}
+/* khoảng cách margin   */
+/* carousel */
+.carousel{
+    background-image: url(../img/slider_1.jpg);
+    height: 460px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.product h2{
+    text-align: center;
+}
+.product__item{
+    width: 25%;
+    float: left;
+    /* margin: 0 20px; */
+    padding: 0 15px;
+    /* không rớt xuống hàng boxzing  */
+}
+.product__item img{
+    width:100%;
+}
+/* panner  */
+.banner{
+    background-image: url(../img/nature.jpg);
+    height: 300px;
+    background-size: cover;
+    /* thằng con khai báo relative  */
+    position: relative;
+}
+.banner__circle{
+    /* thằng con khai báo absolute  */
+    position: absolute;
+    top: 50px;
+    left: 250px;
+    width: 200px;
+    height: 200px;
+        /* rgba */
+    background-color: rgba(255, 0, 0, 0.5);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 62px;
+        /* từ 0 tới 1  */
+    /* opacity: 0.5; */
+}
+.intro__left,.intro__right{
+    width: 50%;
+    float: left;
+}
+.intro__small{
+    width: 50%;
+    float: left;
+}
+.intro__item img{
+    width: 100%;
+    display: block;
+}
+.intro__item {
+    padding: 0 12px 10px;
+    /* padding: 20px 20px; */
+}
+.intro__item.intro__small{
+    padding: 0 5px;
+}
+
+
+
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="description" content="demo html">
+        <title>Demo HTML</title>
+    </head>
+    <body>
+        <h1 style="background-color: red; color: white;text-align: center;">THE COFFEE HOUSE</h1>
+        <hr noshade style="height: 0.5px;width: 550px;" >
+        <hr noshade style="height: 0.5px;width: 50%;" >
+        <!--Liên kết ngoại-- tuyệt đối>
+        <a href="https://www.thecoffeehouse.com/">Đi tới the coffee</a>
+        <!-Liên kết nội -->
+        <a href="#teaMenu">Đi tới tea menu</a>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sed, dolorum assumenda eligendi mollitia voluptatibus, necessitatibus doloremque tempore repudiandae sequi culpa obcaecati <b>eum cum aut nobis optio veniam non</b>, <br> odit est aperiam cumque officia unde totam. Unde numquam sed saepe temporibus molestiae esse in laboriosam exercitationem odio repellat? Libero, maiores facere recusandae doloribus quaerat error, facilis veritatis aspernatur nam tenetur <br> adipisci sequi <i> fuga quo deleniti dolore. Ipsa repellendus sed ex, neque, numquam animi nobis consequatur quis ipsam sequi quos pariatur incidunt voluptate harum eligendi nemo quod, tempore magnam earum veniam </i> corporis voluptatibus sint debitis doloremque. <b><i> Sapiente eveniet ipsa nostrum obcaecati!</i></b>
+        </p>
+        <p id="teaMenu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aliquam sapiente nam laboriosam! Voluptas harum ratione, maxime consectetur, et dolor impedit a non laudantium iste explicabo officia quam dolorem rem! Totam quis accusamus voluptate sed deserunt. Iste harum modi ratione et minima sint nam qui nihil molestias. Recusandae, alias veniam?
+        </p>
+        
+        <!-- danh sách không có thứ tự  -->
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+        <!-- Emmet gõ nhanh nha: ul>li*3  -->
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <!-- danh sách có thứ tự ....... sử dụng đa con trỏ alt rồi trỏ chuột -->
+        <ol type="i">
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ol>
+        <!-- đường dẫn tuyệt đối   không dùng duoc trong live server ... alt:để cho google tìm kiêm-->
+        <img src="D:\java\fontend\img\Green-Tea.jpg" alt="">
+        <!-- đường dẫn tương đối  -->
+        <!-- ./ :vị trí hiện tại của file  -->
+        <!-- ../ : nhảy ra ngoài một cái thư mục  -->
+        <img src="./img/Green-Tea.jpg" alt="fruit">
+        <table border="5px" width="500px" height="300px">
+            <tr>
+                <th colspan="2">name</th>
+                <th>type</th>
+                <th>price</th>
+            </tr>
+            <tr>
+                <td rowspan="4" style="background-color: gold;">traditional</td>
+                <td rowspan="2" style="background-image: url(./img/Green-Tea.jpg);">vietnamees</td>
+                <td>hot</td>
+                <td>6000000</td>
+            </tr>
+            <tr>
+                <td>cold</td>
+                <td>28</td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+// khai báo biến 
+$bg-color:red;
+h1{
+    // gọi biến 
+    background-color: $bg-color;
+}
+// .section1 p 
+// nesting 
+// tối đa 5 cấp thẻ 
+.section1{
+    p{
+        background-color: red;
+    }
+    button{
+        background-color: $bg-color;
+        // button hover 
+        // parent selector 
+        // & đại diện cho button 
+        &:hover{
+            background-color: yellow;
+        }
+    }
+}
+// kế thừa 
+// extend 
+.section2 {
+    @extend .section1;
+}
+// placeholder
+%stylesection{
+    p{
+        background-color: purple;
+    }
+    button{
+        background-color: pink;
+    }
+} 
+.section2{
+    @extend %stylesection;
+}
+
+// Mixin 
+// không có tham số 
+@mixin stylesection {
+    p{
+        background-color: rgb(0, 81, 128);
+    }
+    button{
+        background-color: rgb(203, 255, 192);
+    }
+}
+.section3{
+    @include stylesection;
+}
+//có tham số 
+@mixin stylesection2($bg-p,$bg-b) {
+    p{
+        background-color:$bg-p;
+    }
+    button{
+        background-color:$bg-b ;
+    }
+}
+// xử dụng 
+.section2{
+    @include stylesection2(blue,brown);
+}
+.section3{
+    @include stylesection2(violet, gold);
+}
